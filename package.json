@@ -1,0 +1,37 @@
+{
+  "name": "prisma-migrate-ci-demo",
+  "version": "1.0.0",
+  "description": "Demo Node.js + Prisma Migrate + GitHub Actions CI/CD",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate:dev": "prisma migrate dev",
+    "prisma:migrate:deploy": "prisma migrate deploy",
+    "prisma:migrate:status": "prisma migrate status",
+    "prisma:migrate:resolve": "prisma migrate resolve",
+    "db:seed": "node prisma/seed.js",
+    "migrate:safe": "node scripts/safe-migrate.js",
+    "ci:check": "node scripts/ci-check.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [
+    "prisma",
+    "migrate",
+    "github-actions",
+    "cicd"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prisma": "^5.22.0"
+  }
+}
