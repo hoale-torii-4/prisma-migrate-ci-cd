@@ -1,5 +1,5 @@
 -- AlterTable
-ALTER TABLE `post` MODIFY `content` VARCHAR(191) NULL;
+ALTER TABLE `Post` MODIFY `content` VARCHAR(191) NULL;
 
 -- AlterTable
-ALTER TABLE `user` ADD COLUMN `fatherName` VARCHAR(191) NULL;
+ALTER TABLE `User` ADD COLUMN `fatherName` VARCHAR(191) NULL;
