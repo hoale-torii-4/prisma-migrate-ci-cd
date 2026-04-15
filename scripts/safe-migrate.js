@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { execSync } = require('child_process');
 
 function run(cmd) {

@@ -13,7 +13,7 @@ Demo project Node.js to show how to manage Prisma migrations safely in CI/CD.
 
 - Node.js + Express
 - Prisma ORM
-- PostgreSQL
+- MySQL
 - GitHub Actions (CI/CD)
 
 ## Project structure
@@ -68,7 +68,7 @@ npm run prisma:migrate:dev -- --name your_change_name
 ```
 
 3. Commit all files in `prisma/migrations`.
-4. Open PR. CI will run `prisma migrate deploy` on an isolated PostgreSQL service.
+4. Open PR. CI will run `prisma migrate deploy` on an isolated MySQL service.
 
 ### On production CD
 
