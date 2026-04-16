@@ -12,6 +12,7 @@ model User {
   email     String   @unique
   name      String?
   fatherName String?
+  motherName String?
   posts     Post[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
